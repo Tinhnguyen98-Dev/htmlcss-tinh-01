@@ -173,6 +173,28 @@ a {
     align-items: center;
 }
 
+.clients-img .img-bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 91px;
+    padding: 0 41px;
+    /* background-color: orange; */
+}
+
+.clients-img .img-bg:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+}
+
+.clients-img .img-bg:first-of-type {
+    padding-left: 10px;
+}
+
+.clients-img .img-bg:last-of-type {
+    padding-right: 10px;
+}
+
 /* ============ GUIDES ============== */
 .guides {
     margin-top: 81px;
@@ -590,6 +612,7 @@ a {
 
 .footer .column .social {
     margin-top: 40px;
+    background: #f9f9f9;
 }
 
 .footer .social {
