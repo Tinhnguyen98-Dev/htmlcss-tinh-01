@@ -57,16 +57,18 @@ a {
 /* End Common */
 
 /* ============ HEADER ============== */
-.header {
-    position: relative;
-    background: #e6f0ff;
-    height: 100vh;
+.sticky-header {
+    background-color: #e6f0ff;
+    padding-top: 26px;
+    top: -26px;
+    position: sticky;
+    z-index: 1;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 
 .navbar ul {
@@ -101,6 +103,15 @@ a {
 }
 
 /* =============HERO================ */
+
+.hero-wrap {
+    position: relative;
+    background: #e6f0ff;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 104px);
+}
+
 .hero {
     margin-top: 138px;
     /* xem lại phần này */
@@ -621,8 +632,12 @@ a {
     width: 117px;
 }
 
-.footer .social a {
+.footer .social .social-link {
+    width: 0.7rem;
+    height: 1.2rem;
     color: #646464;
+    padding: 8px 11px;
+    background-color: #f9f9f9;
 }
 
 .footer .content .row-bottom {
