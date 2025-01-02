@@ -7,6 +7,11 @@
     --color-primary: #0f1b4c;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -108,20 +113,16 @@ a {
     position: relative;
     background: #e6f0ff;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    height: calc(100vh - 104px);
+    height: calc(100vh - 90px);
 }
 
-.hero {
-    margin-top: 138px;
-    /* xem lại phần này */
-}
-
-.hero .info {
+.hero-wrap .info {
     width: 50.36%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -129,7 +130,7 @@ a {
     color: #687690;
 }
 
-.hero .title {
+.hero-wrap .title {
     margin-top: 8px;
     font-weight: 700;
     font-size: 6.2rem;
@@ -137,7 +138,7 @@ a {
     color: #000336;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     padding-right: 8px;
     color: #5a6473;
